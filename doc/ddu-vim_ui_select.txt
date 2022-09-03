@@ -1,0 +1,63 @@
+*ddu-vim_ui_select.txt*			Replace |vim.ui.select()| with ddu
+
+Forked from https://github.com/matsui54/ddu-vim-ui-select
+
+Author: ryota2357
+License: MIT license
+
+CONTENTS					*ddu-vim_ui_select-contents*
+
+Introduction		|ddu-vim_ui_select-introduction|
+Install			|ddu-vim_ui_select-install|
+Functions		|ddu-vim_ui_select-functions|
+Params			|ddu-vim_ui_select-params|
+Actions			|ddu-kind-help-actions|
+
+
+==============================================================================
+INTRODUCTION				*ddu-vim_ui_select-introduction*
+
+This plugin replaces |vim.ui.select()| with ddu's ui.
+This plugin can only be used with Neovim.
+
+Forked from https://github.com/matsui54/ddu-vim-ui-select/tree/4290da609591fc4eec78bb16c56f54915d1a6554.
+
+==============================================================================
+INSTALL					*ddu-vim_ui_select-install*
+
+Please install both "ddu.vim" and "denops.vim".
+
+https://github.com/Shougo/ddu.vim
+https://github.com/vim-denops/denops.vim
+
+==============================================================================
+FUNCTIONS				*ddu-vim_ui_select-functions*
+
+setup({config})			*ddu-vim_ui_select.setup()*
+		{config} can contain following keys.
+
+		ddu_options	(table)
+			Specify ddu options. It is used in ddu#start().
+
+			Default: {}
+
+		auto_register	(boolean)
+			If it is ture, this plugin automatically register
+			|vim.ui.select()|.
+
+			Default: true
+
+==============================================================================
+PARAMS						*ddu-vim_ui_select-params*
+
+Undefined.
+
+==============================================================================
+ACTIONS						*ddu-kind-vim_ui_select-actions*
+
+					*ddu-kind-vim_ui_select-action-select*
+select
+		Select the item and execute the callback.
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:norl:noet:fen:noet:
